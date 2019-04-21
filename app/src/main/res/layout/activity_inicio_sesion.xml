@@ -1,0 +1,7 @@
+/* SEMINARIO ANDROID STUDIO - DAVID CHURA - SISTEMAS UNI*/
+protected void onCreate(){
+  super
+}
+public void mostrarInicioSesion(View view){
+  startActivity(new Intent
+}
