@@ -1,1 +1,26 @@
 /*nueva pagina*/
+
+@Override
+protecte void onCreate(Bundle savedInstance){
+}
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item){
+    switch (item.getItemId()){
+        case R.id.nav_ayuda:
+          mostrarAyuda();
+        case R.id.nav_info:
+          mostrarInfo();
+          return true;
+        default:
+          return super.onOptionsItemSelected(item);
+    }
+}
+private void mostrarInfo(){
+  Toast.makeText(context:this, text:"Esperando información",
+                 Toast.LENGTH_LONG).show();
+}
+
+private void mostrarAyuda(){
+  setTitle("Mas ayuda por favor");
+}
