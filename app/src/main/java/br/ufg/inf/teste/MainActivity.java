@@ -1,3 +1,4 @@
+/* SEMINARIO ANDROID STUDIO - SISTEMAS UNI - PROF. DAVID CHURA */
 package br.ufg.inf.teste;
 
 import android.support.v7.app.AppCompatActivity;
