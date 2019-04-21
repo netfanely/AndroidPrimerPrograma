@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".InicioSesionActivity">
-            android:label="@string/InicioSesion">
+            android:label="@string/inicio_sesion">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
