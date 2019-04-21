@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Teste</string>
+    <string name="app_name">Inicio Sesion</string>
     <string name="saudacao">HELLO</string>
     <string name="hello">Net-Fanely.com</string>
 </resources>
