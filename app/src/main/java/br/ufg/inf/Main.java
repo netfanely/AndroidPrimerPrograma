@@ -9,19 +9,20 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText user, pass;
-    Button btnEntrar, btnRegistrar;
-    daoUsuario dao;
+public class Main extends AppCompatActivity implements View.OnClickListener {
+EditText user, pass;
+Button btnEntrar, btnRegistrar;
+daoUsuario dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
         user=(EditText)findViewById(R.id.User);
         pass=(EditText)findViewById(R.id.Pass);
         btnEntrar=(Button)findViewById(R.id.btnEntrar);
         btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
+        
         btnEntrar.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
         dao=new daoUsuario(this);
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.btnRegistrar:
-                Intent i=new Intent(MainActivity.this,Registrar.class);
+                Intent i=new Intent(Main.this,Registrar.class);
                 startActivity(i);
                 break;
 
