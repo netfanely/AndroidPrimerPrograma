@@ -17,7 +17,7 @@ public class daoUsuario {
 
     public daoUsuario(Context c){
         this.c=c;
-        sql=c.openOrCreateDatabase(bd,c.MODE_PRIVATE, null);
+        sql=c.openOrCreateDatabase(bd,c.MODE_PRIVATE, null); /*abrir o crear la base de datos*/
         sql.execSQL(tabla);
         u=new Usuario();
 
@@ -45,7 +45,7 @@ public class daoUsuario {
         return x;
     }
 
-    public ArrayList<Usuario>selectUsuarios(){
+    public ArrayList<Usuario> selectUsuarios(){
         ArrayList<Usuario> lista=new ArrayList<Usuario>();
         lista.clear();
         Cursor cr = sql.rawQuery("select * from usuario",null);
