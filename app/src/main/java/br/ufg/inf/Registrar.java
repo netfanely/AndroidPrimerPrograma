@@ -9,9 +9,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Registrar extends AppCompatActivity implements View.OnClickListener {
-    EditText us, pas, nom, ap;
-    Button reg, can;
-    daoUsuario dao;
+EditText us, pas, nom, ap;
+Button reg, can;
+daoUsuario dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
 
                 break;
             case R.id.btnRegCancelar:
-                Intent i=new Intent(Registrar.this,MainActivity.class);
+                Intent i=new Intent(Registrar.this,Main.class);
                 startActivity(i);
                 finish();
                 break;
