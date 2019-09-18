@@ -4,6 +4,7 @@ public class Usuario {
     int Id;
     String Nombre, Apellidos, Usuario, Password;
 
+/* Constructores */
     public Usuario() {
     }
 
@@ -13,7 +14,9 @@ public class Usuario {
         Usuario = usuario;
         Password = password;
     }
-
+    
+/* Metodo isNull, para validar los campos vacios*/
+    
     public boolean isNull(){
         if(Nombre.equals("")&&Apellidos.equals("")&&Usuario.equals("")&&Password.equals("")){
             return false;
@@ -21,6 +24,9 @@ public class Usuario {
             return true;
         }
     }
+    
+/* toString */
+    
     @Override
     public String toString() {
         return "Usuario{" +
@@ -31,7 +37,9 @@ public class Usuario {
                 ", Password='" + Password + '\'' +
                 '}';
     }
-
+    
+/* Getter and Setter*/
+    
     public int getId() {
         return Id;
     }
